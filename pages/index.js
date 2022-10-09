@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Profil from '../public/profil.png'
 import Brows from '../public/browser.png'
 import Dbase from '../public/lock.png'
 import Fapi from '../public/letters.png'
@@ -10,9 +11,6 @@ import { useState } from 'react'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const Profil = ({ src, width, quality }) => {
-    return `https://aryanaufal.github.io/public/profil.png?w=${width}&q=${quality || 75}`
-  }
   return (
     <div className={darkMode ? "dark" : ""}>
 
