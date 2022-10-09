@@ -8,7 +8,7 @@ const nextConfig = {
     
   },
   basePath: "/nextjs-pages",
-  assetPrefix: "/nextjs-pages",
+  assetPrefix: ".",
 }
 
 module.exports = nextConfig
