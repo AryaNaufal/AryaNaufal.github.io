@@ -34,8 +34,5 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          token: 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
-          REPOSITORY_NAME: https://github.com/AryaNaufal/AryaNaufal.github.io.git
           branch: gh-pages
           folder: out # The folder the action should deploy.
-          CLEAN: true
