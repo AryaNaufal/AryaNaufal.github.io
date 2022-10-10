@@ -16,26 +16,25 @@ export default function Home() {
 
       <main className='bg-white px-10 dark:bg-gray-800'>
         <section className='min-h-screen '>
-          <nav className='py-10 mb-12 flex justify-between '>
-            <h1 className='text-2xl font-bold dark:text-white'>Arya Naufal</h1>
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className='text-xl font-bold md:text-2xl md:font-bold dark:text-white'>My Website</h1>
             <ul className='flex items-center dark:text-white'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer' />
               </li>
               <li>
-                <a className='bg-green-500 text-white px-4 py-2 rounded-md ml-8' href="">Contact</a>
+                <a className='bg-green-500 text-white px-2 py-2 rounded-md ml-8 md:px-4 md:py-2' href="">Contact</a>
               </li>
             </ul>
           </nav>
-
-          <div className='relative mx-auto bg-gradient-to-b from-green-400 rounded-full w-80 h-80 overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-green-400 rounded-full overflow-hidden w-60 h-60 md:w-80 md:h-80'>
             <Image src={Profil} alt="My Picture" layout="fill" objectFit='cover' />
           </div>
 
           <div className='text-center p-10 '>
-            <h2 className='text-5xl py-2 text-green-600'>Arya Naufal</h2>
-            <h3 className='text-2xl py-2 dark:text-white'>Junior Web Developer.</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'>
+            <h2 className='text-3xl py-2 font-bold md:text-5xl md:py-2 text-green-600'>Arya Naufal</h2>
+            <h3 className='text-xl py-2 md:text-2xl md:py-2 dark:text-white'>Junior Web Developer.</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white'>
               I am unemployed and like to make a website design. For further information, please visit the site below
             </p>
           </div>
