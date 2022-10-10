@@ -85,13 +85,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section>
-          <div>
-            <h3>Contact</h3>
-            <p></p>
-          </div>
-        </section>
       </main>
     </div>
   )
