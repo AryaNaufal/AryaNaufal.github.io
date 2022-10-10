@@ -34,6 +34,5 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          token: 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
           branch: gh-pages
           folder: out # The folder the action should deploy.
