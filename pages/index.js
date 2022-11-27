@@ -70,7 +70,8 @@ export default function Home() {
         </div>
 
           {/* profil */}
-        <section id='homes' className='min-h-screen px-10 py-10 md:py-10' >
+          <div className="container mx-auto">
+          <section id='homes' className='px-10 py-10 md:py-10' >
           <div className='relative mx-auto bg-gradient-to-b from-green-400 rounded-full overflow-hidden w-60 h-60 md:w-72 md:h-72'>
             <Image src={Profil} alt="My Picture" layout="fill" objectFit='cover' />
           </div>
@@ -97,7 +98,7 @@ export default function Home() {
         </section>
 
         {/* Skill */}
-        <section id="skills" className='px-10 pt-20 md:pt-20'>
+        <section id="skills" className='px-10 py-10 md:py-10'>
           <div className='text-center mb-12 dark:text-white'>
             <h3 className='text-4xl mb-2 font-bold pb-16'>My Experience</h3>
             <p>
@@ -142,6 +143,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+          </div>
+        
       </main>
     </div>
   )
