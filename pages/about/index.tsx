@@ -1,4 +1,5 @@
-import Button from "../Components/Elements/button";
+import Image from "next/image";
+
 const LANG = {
   javascript: {
     image: "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
@@ -103,12 +104,14 @@ export default function About() {
             <div className="flex items-center gap-3">
               <span className="font-semibold">Language:</span>
               <div className="flex gap-2 md:gap-3">
-                {Object.keys(LANG).map((key, val) => {
+                {Object.keys(LANG).map((key): any => {
                   return (
-                    <img
+                    <Image
+                      key={key}
                       src={LANG[key].image}
                       alt={LANG[key].alt}
                       width={45}
+                      height={45}
                       title={LANG[key].alt}
                       className="p-2 text-xl transition-all rounded bg-slate-200 md:w-14 hover:scale-110"
                     />
@@ -120,12 +123,14 @@ export default function About() {
             <div className="flex items-center gap-3">
               <span className="font-semibold">Database:</span>
               <div className="flex gap-2 md:gap-3">
-                {Object.keys(DB).map((key, val) => {
+                {Object.keys(DB).map((key) => {
                   return (
-                    <img
+                    <Image
+                      key={key}
                       src={DB[key].image}
                       alt={DB[key].alt}
                       width={45}
+                      height={45}
                       title={DB[key].alt}
                       className="p-2 transition-all rounded bg-slate-200 md:w-14 hover:scale-110"
                     />
@@ -137,12 +142,14 @@ export default function About() {
             <div className="flex items-center gap-3">
               <span className="font-semibold">Frameworks:</span>
               <div className="flex gap-2 md:gap-3">
-                {Object.keys(Frameworks).map((key, val) => {
+                {Object.keys(Frameworks).map((key) => {
                   return (
-                    <img
+                    <Image
+                      key={key}
                       src={Frameworks[key].image}
                       alt={Frameworks[key].alt}
                       width={45}
+                      height={45}
                       title={Frameworks[key].alt}
                       className="p-2 transition-all rounded bg-slate-200 md:w-14 hover:scale-110"
                     />
@@ -154,12 +161,14 @@ export default function About() {
             <div className="flex items-center gap-3">
               <span className="font-semibold">Others:</span>
               <div className="flex gap-2 md:gap-3">
-                {Object.keys(Others).map((key, val) => {
+                {Object.keys(Others).map((key) => {
                   return (
-                    <img
+                    <Image
+                      key={key}
                       src={Others[key].image}
                       alt={Others[key].alt}
                       width={45}
+                      height={45}
                       title={Others[key].alt}
                       className="p-2 transition-all rounded bg-slate-200 md:w-14 hover:scale-110"
                     />
@@ -244,5 +253,5 @@ export default function About() {
       </div> */}
 
     </div >
-  );
-};
+  )
+}

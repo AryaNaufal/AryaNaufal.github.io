@@ -2,9 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images:{
-    loader: "default",
-    path: "",
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'icon.icepanel.io'
+      }, 
+      {
+        hostname: 'i.pinimg.com'
+      }
+    ]
   },
 
   // basePath: "/nextjs-pages",
