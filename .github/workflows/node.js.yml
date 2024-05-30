@@ -30,6 +30,9 @@ jobs:
     - run: npm run build
     - run: npm run export
     - run: touch ./out/.nojekyll
+    
+    - name: Static HTML export with Next.js
+      run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
