@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div className="container flex flex-col justify-center gap-5 pt-16 mx-auto md:pt-20">
       <Image
-        src="https://i.pinimg.com/736x/f6/53/5b/f6535b0b53983ade21d904d572441d9c.jpg"
+        src={"354a06f6-3e4d-4238-bb1c-60b8fd5f2275.jpeg"}
         alt=""
-        width={200}
-        height={200}
-        className="mx-auto rounded-full w-60"
+        width={50}
+        height={50}
+        className="object-cover mx-auto rounded-full h-60 w-60"
       />
       <div className="text-center">
         <h1 className="mb-3 text-4xl font-bold md:text-5xl">Arya Naufal</h1>

@@ -83,7 +83,7 @@ const Others = {
 }
 export default function About() {
   return (
-    <div className="container flex flex-col justify-center py-16 mx-auto md:py-20">
+    <div className="container flex flex-col justify-center py-16 mx-auto overflow-hidden md:py-20">
 
       <h1 className="mb-5 text-xl font-bold md:text-3xl">About</h1>
       <div className="my-5">
@@ -95,15 +95,15 @@ export default function About() {
       <hr className="border-1 border-slate-400" />
 
       {/* Skill */}
-      <div className="my-10">
+      <div className="my-10 overflow-hidden">
 
         <h2 className="mb-5 text-xl font-bold md:text-3xl">Technical Skills</h2>
-        <div className="p-5 rounded ">
+        <div className="p-5 rounded">
           <div className="flex flex-col gap-3">
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-3">
               <span className="font-semibold">Language:</span>
-              <div className="flex gap-2 md:gap-3">
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {Object.keys(LANG).map((key): any => {
                   return (
                     <Image
@@ -120,9 +120,9 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-3">
               <span className="font-semibold">Database:</span>
-              <div className="flex gap-2 md:gap-3">
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {Object.keys(DB).map((key) => {
                   return (
                     <Image
@@ -139,9 +139,9 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-3">
               <span className="font-semibold">Frameworks:</span>
-              <div className="flex gap-2 md:gap-3">
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {Object.keys(Frameworks).map((key) => {
                   return (
                     <Image
@@ -158,9 +158,9 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col gap-3">
               <span className="font-semibold">Others:</span>
-              <div className="flex gap-2 md:gap-3">
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {Object.keys(Others).map((key) => {
                   return (
                     <Image
