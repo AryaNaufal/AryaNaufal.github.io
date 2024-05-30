@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -12,9 +13,6 @@ const nextConfig = {
       }
     ]
   },
-
-  // basePath: "/nextjs-pages",
-  // assetPrefix: ".",
 }
 
 module.exports = nextConfig
