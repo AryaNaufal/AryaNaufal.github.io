@@ -88,7 +88,7 @@ export default function About() {
       <h1 className="mb-5 text-xl font-bold md:text-3xl">About</h1>
       <div className="my-5">
         <p className="items-baseline mx-5 text-sm italic font-semibold md:text-lg">
-        Hi, I'm Arya Naufal, I from the city of South Tangerang, I graduated from SMK Letris Indonesia 2 majoring in software engineering. I am interested with technology.
+        Hi, Im Arya Naufal, I from the city of South Tangerang, I graduated from SMK Letris Indonesia 2 majoring in software engineering. I am interested with technology.
         </p>
       </div>
 
