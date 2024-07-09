@@ -8,8 +8,8 @@ const Card = ({ title, description, featuredImg, plarform, tech }) => {
         src={featuredImg}
         className="absolute top-0 object-cover object-left-top h-full"
         alt=""
-        width={300}
-        height={300}
+        width={1000}
+        height={1000}
       />
       <div className="absolute transition ease-out duration-300 bottom-0 translate-y-[60px] hover:-translate-y-0 h-[calc(100%+60px)] w-full bg-gradient-to-t from-white via-[#ffffffd3] flex flex-col justify-end">
         <div className="px-4 py-3">
