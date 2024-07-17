@@ -10,8 +10,9 @@ export default function Project() {
       featuredImg:
         "toko-onlen.png",
       description: "my own project which aims to improve back end skills.",
-      plarform: "Web",
+      platform: "Web",
       tech: "Next.js",
+      repository: "https://github.com/AryaNaufal/toko-onlen.git",
     },
   ];
 
